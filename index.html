@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h1>Wikipedia Viewer</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm boxes">              
+                <a href="https://en.wikipedia.org/wiki/Special:Random" target= "blank" class="random">
+                    Click here for a random Wikipedia article
+                </a>
+                <div class="search">Click to search</div>
+                <div class="search-block">
+                    <input type="search" name="search" list="search-words">
+                    <datalist id="search-words">
+                    </datalist>
+                    <div class="buttons">
+                        <div class="enter">Search</div>           
+                        <div class="reset">Reset</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm list">
+                <div class="list-group">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm text-center footer">
+        <a href="https://www.linkedin.com/in/paulius-garbasauskas" target="_blank">by Paulius Garbašauskas</a>
+    </div>
+
+        
+
+
+    
+
+        
+
+   
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

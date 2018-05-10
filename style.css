@@ -1,0 +1,133 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(221, 214, 181);
+    position: relative;
+    min-height: 100%;
+}
+
+h1 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.random, .search {
+    width: 50%;   
+    height: 200px;
+    border: 1px solid #000;
+    background: #fff;
+    text-align: center;
+    display: flex;    
+    justify-content: center;  
+    align-items: center;
+    color: #000;
+}
+
+.random {
+    margin: 80px 0;
+}
+
+.random:hover, .search:hover, .enter:hover, .reset:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.50);
+    color: #fff;
+    text-decoration: none;
+}
+
+.random:active, .search:active, .enter:active, .reset:active {
+    background: rgba(0, 0, 0, 0.70);
+    color: #fff;
+}
+
+.search-block {
+    width: 50%;
+}
+
+input {
+    display: none;
+    width: 100%;
+    border: 1px solid #000;
+    text-align: center;
+    height: 157px;
+    padding: 0 60px;
+} 
+
+input:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+}
+
+.enter, .reset {
+    display: none;
+    width: 50%;
+    margin-top: 5px;
+    border: 1px solid #000;
+    background: #ccc;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.enter {
+    margin-right: 2.5px;
+}
+
+.reset {
+    margin-left: 2.5px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.list-group-item {
+    width: 1400px;
+    margin-bottom: 10px;
+}
+
+a.list-group-item .name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+a.list-group-item:hover {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #c4727263;
+}
+
+a.list-group-item:active {
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+/* Remove datalist dropdown arrow */
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background: #c4727263;
+}
+
+.footer a {
+    color: #000;
+}
